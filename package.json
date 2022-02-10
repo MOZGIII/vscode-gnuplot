@@ -98,7 +98,8 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "lint": "tslint -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "code-install": "rm -f gnuplot-*.vsix && npx vsce package && code --install-extension gnuplot-*.vsix"
     },
     "devDependencies": {
         "@types/node": "^10.14.17",
